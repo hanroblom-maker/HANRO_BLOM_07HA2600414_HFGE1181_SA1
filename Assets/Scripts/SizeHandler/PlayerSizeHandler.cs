@@ -20,7 +20,7 @@ public class PlayerSizeHandler : UnitSizeHandler
             size += .25f;
             satiationValue = 0f;
 
-            //anim.SetTrigger("Grow");
+            anim.SetTrigger("Grow");
 
 
         }
@@ -46,7 +46,7 @@ public class PlayerSizeHandler : UnitSizeHandler
         if (!isSmaller)
         {   
             satiationValue += 25f;
-            //anim.SetTrigger("Bite");
+            anim.SetTrigger("Bite");
 
             Debug.Log("Satiation = " + satiationValue);
             Debug.Log("Current Size = " + size);
