@@ -22,14 +22,10 @@ public class EnemySizeHandler : UnitSizeHandler
         }
         else
         {
-            Debug.Log("Enemy consumed: " + unit.name); //
-            Debug.Log("Enemy size before: " + size); //
-            Debug.Log("Enemy satiation before: " + satiationValue); //
 
-            // anim.SetTrigger("Bite");
+            anim.SetTrigger("Bite");
             base.Consume(unit);
 
-            Debug.Log("Enemy satiation after: " + satiationValue); //
         }
 
     }
